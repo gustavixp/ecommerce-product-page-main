@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+
+      <header class="header">
+        <div class="header__wrapper">
+          <nav class="nav">
+            <div class="nav__left">
+              <img class="hamb" src="images/icon-menu.svg" alt="">
+              <img class="hamb-close" src="images/icon-close.svg" alt="">
+              <img class="logo" src="images/logo.svg" alt="logo">
+              <div class="nav__links">
+                <a href="#">Collections</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+            <div class="nav__right">
+              <div class="cart__container">
+                <button class="cart-btn">
+                  <span class="indicator"></span>
+                  <img src="images/icon-cart.svg" alt="">
+                </button>
+                <div class="cart__content">
+                  <p class="cart__heading">Cart</p>
+                  <div class="cart__text">
+                    <div class="cart__product--on">
+                      <img class="product__img" src="images/image-product-1-thumbnail.jpg" alt="">
+                      <div class="product__info">
+                        <p class="product__title">Fall Limited Edition Sneakers</p>
+                        <p><span>$125.00</span> x <span class="number">1</span><b class="total">$125.00</b></p>
+                      </div>
+                      <button class="delete-btn"><img src="images/icon-delete.svg" alt=""></button>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                  </div>
+                </div>
+              </div>
+              <img class="avatar" src="images/image-avatar.png" alt="">
+            </div>
+          </nav>
+          <div class="nav__overlay"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__wrapper">
+            <div class="hero__gallery">
+              <img id="big-image" class="big-pic-product" src="images/image-product-1.jpg" alt="" data-index="0">
+              <a id="prev-arrow" class="prev-mob">&#10094;</a>
+              <a id="next-arrow" class="next-mob">&#10095;</a>
+              <div class="gallery__thumbs">
+                <img src="images/image-product-1-thumbnail.jpg" alt="">
+                <img src="images/image-product-2-thumbnail.jpg" alt="">
+                <img src="images/image-product-3-thumbnail.jpg" alt="">
+                <img src="images/image-product-4-thumbnail.jpg" alt="">
+              </div>
+            </div>
+            <div class="hero__text">
+              <p class="company">Sneaker Company</p>
+              <h1 class="title">Fall Limited Edition Sneakers</h1>
+              <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+              <div class="price">
+                <div class="price__new">
+                  <b class="price__now">$125.00</b>
+                  <span class="discount">50%</span>
+                </div>
+                <p class="price__old">$250.00</p>
+              </div>
+              <div class="hero__buttons">
+                <div class="amount-btns">
+                  <button class="minus">
+                    <img src="images/icon-minus.svg" alt="">
+                  </button>
+                  <p class="amount">1</p>
+                  <button class="plus">
+                    <img src="images/icon-plus.svg" alt="">
+                  </button>
+                </div>
+                <button class="add-btn">
+                  <img src="images/icon-cart.svg" alt="">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
